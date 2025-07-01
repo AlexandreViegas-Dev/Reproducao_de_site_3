@@ -1,0 +1,268 @@
+body{
+    padding: 0px;
+    margin: 0px;
+    overflow-x: hidden;
+    font-family: "Montserrat", sans-serif;
+    -webkit-font-smoothing: antialiased;
+}
+
+h2{
+    margin: 0;
+    color: #252525;
+    font-weight: 600;
+}
+
+a{
+    color: #007bff;
+    text-decoration: none;
+    background-color: transparent;
+}
+
+a:hover {
+    color: #0056b3;
+    text-decoration: underline
+}
+
+#lateralbar{
+    display: inline-block;
+    width: 4.7%;
+    height: 100vh;
+    background-color: rgb(255, 255, 255);
+}
+
+#menubutton{
+    display: inline-block;
+    background-color: black;
+    width: 100%;
+    height: 9vh;
+}
+
+#menubutton>span{
+    border: solid white 2px;
+    display: inline-block;  
+    width: 40%;
+    margin-left: 20%;
+}
+
+#nav>input{
+    position: absolute;
+    height: 9vh;
+    width: 9%;
+    z-index: 99;
+    transform: translate(-54%, -0.5vh);
+    opacity: 0;
+}
+
+#nav>div{
+    position: absolute;
+    z-index: 98;
+    background-color: white;
+    height: 100vh;
+    width: 14%;
+    transform: translateX(-100%);
+    transition: all .2s ease-in-out;
+}
+
+#nav>input:checked+div{
+    transform: translateX(0);
+}
+
+#navbtnreturn{
+    width: 34%;
+    height: 9.3vh;
+    display: inline-block;
+    background-color: black;
+}
+
+#navlogo{
+    width: 63%;
+    height: 9.3vh;
+    display: inline-block;
+    background-color: #2916e0;
+}
+
+#nav>div>ul{
+    margin-top: 24vh;
+    list-style: none;
+    text-align: center;
+}
+
+#nav>div>ul>li>a{
+    display: block;
+    font-size: 30px;
+    font-weight: 600;
+    color: #b2b2b2;
+    transition: all 0.3s ease-in-out;
+    text-decoration: none;
+    font-family: "Montserrat", sans-serif;
+}
+
+#nav>div>ul>li>a:hover{
+    color:#2916e0;
+}
+
+#navbtnclicked{
+    color: #2916e0 !important;
+}
+
+#album{
+    display: flex;
+    position: absolute;
+    transform: translate(1.6%, -100vh);
+    margin-left: 3%;
+    min-width: 20%;
+    width: 95.5%;
+    border: none;
+}
+
+#album>div{
+    overflow-x: hidden;
+    transition: all .4s ease-in-out;
+    height: 100vh;
+    width: 20%;
+    background-position: 20% 0;
+    border: none;
+    background-color: rgba(0, 0, 0, 0.479);
+    background-blend-mode: multiply;
+}
+
+#album>div:hover{
+    width: 124%;
+    background-color: rgba(0,0,0,0);
+}
+
+#album>div:hover~#albumimg1{
+    width: 20% !important;
+    background-color: rgba(0, 0, 0, 0.479);
+}
+
+#albumimg1{
+    background-image: url(img/hero/5.jpg.webp);
+    width: 124% !important;
+    background-color: rgba(0,0,0,0);
+}
+
+#albumimg2{
+    background-image: url(img/hero/1.jpg.webp);
+}
+
+#albumimg3{
+    background-image: url(img/hero/2.jpg.webp);
+}
+
+#albumimg4{
+    background-image: url(img/hero/3.jpg.webp);
+}
+
+#albumimg5{
+    background-image: url(img/hero/4.jpg.webp);
+}
+
+/* About Me */
+
+#glencross{
+    display: inline-block;
+    position: absolute;
+    background-color: #2916e0;
+    height: 100vh;
+    width: 44.8%;
+    padding-left: 8%;
+    box-sizing: border-box;
+}
+
+#glencross>img{
+    margin-top: 3vh;
+    border-radius: 50%;
+}
+
+#glencross>h2{
+    font-weight: 500;
+    font-size: 36px;
+    line-height: 1.2;
+    font-family: "Montserrat", sans-serif;
+    color: white;
+}
+
+#glencross>p{
+    color:#fff;
+    font-size: 15px;
+    line-height: 1.8;
+    font-family: "Montserrat", sans-serif;
+    width: 78%;
+    margin-bottom: 2vh;
+}
+
+#glenbtn{
+    display: inline-block;
+    width: 20%;
+    padding: 0.5vh 10px;
+    color: #fff;
+    font-size: 16px;
+    font-weight: 500;
+    text-align: center;
+    border-radius: 50px;
+    border: 2px solid rgba(255, 255, 255, 0.3);
+    margin-right: 4%;
+}
+
+#colorlibgmail{
+    color:white;
+    text-decoration:underline;
+    font-style: italic;
+}
+
+#aboutme{
+    display: inline-block;
+    position: absolute;
+    transform: translateX(88.87%);
+    width: 50.4%;
+    box-sizing: border-box;
+    padding-left: 4%;
+}
+
+#aboutme>h2{
+    display: inline-block;
+    border-bottom: 3px solid #2916e0;
+    font-size: 36px;
+}
+
+#aboutme>p{
+    font-size: 16px;
+    line-height: 1.4;
+    color: #636363;
+    width: 90%;
+}
+
+/* Contato */
+
+#contactfloatingdiv{
+    display: flex;
+    position: absolute;
+    background-color: white;
+    width: 59%;
+    height: 20vh;
+    margin-top: -30vh;
+    margin-left: 23%;
+    border-radius: 8px;
+}
+
+#contactfloatingdiv>div{
+    text-align: center;
+    width: 23%;
+}
+
+#contactfloatingdiv p{
+    margin-bottom: 0;
+    font-size: 18px;
+    color: #252525;
+    font-weight: 500;
+    line-height: 1.8;
+    color:black;
+    margin-left: 10%;
+}
+
+#contactfloatingdiv span{
+    color: #b2b2b2;
+    font-weight: 400;
+    font-size: 18px;
+}
